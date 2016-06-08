@@ -1,0 +1,151 @@
+% Definitionen und Befehle
+\newcolumntype{Z}[1]{>{\RaggedRight\arraybackslash}p{#1}}%
+\newcolumntype{C}[1]{>{\Centering\arraybackslash}p{#1}}%
+\newcommand{\talk}[2]%
+{%
+	& \textbf{#1} \newline \emph{#2}
+}%
+% Titel -- Redner
+
+
+\newcommand{\workshop}[3]%
+{%
+	\workshopbox{#1}{#2}{#3}
+}%
+
+\newcommand{\otherevent}[1]%
+{%
+	& \textbf{#1}
+}%
+
+\newcommand{\aulaevent}[2]%
+{%
+	&
+	\multicolumn{3}{c}{
+		\textbf{#1} (Aula) \par \emph{#2}
+	}
+}%
+
+\newcommand{\coffeespace}{\vspace{0.4em}}
+\newcommand{\workshopspace}{\vspace{0.5em}\\}
+
+% Farben definieren
+\definecolor{commongray}{gray}{.9}
+%\vspace{-1.2em}
+\renewcommand{\arraystretch}{1.4}
+
+
+\newpage
+\section*{Workshops am Montag}\label{montag-workshops}%a
+	\newsmalltimeslot{15:00 bis 16:30}%
+	% Hack, um Einrücken des ersten Workshops wieder rückgängig zu machen
+	\raggedright
+	\noindent\workshop{GraphHopper-Workshop}{Peter Karich}{432}\workshopspace
+	\noindent\workshop{QGIS-Grundlagen}{Otto Dassau}{3004}\workshopspace
+	\newsmalltimeslot{17:00 bis 18:30}
+	\noindent\workshop{Datenmodellierung mit PostgreSQL/PostGIS für QGIS}{Bernhard Ströbel}{432}\workshopspace
+	\noindent\workshop{Einführungsworkshop OpenLayers 3}{Marc Jansen}{3004}\workshopspace
+% 	
+\newpage
+\section*{Workshops am Dienstag}\label{dienstag-workshops}
+	\newsmalltimeslot{09:00 bis 10:30}
+	\workshop{OpenStreetMap-Daten finden mit der Overpass-API}{Roland Olbricht}{432}\workshopspace
+	\workshop{PostGIS für Einsteiger}{Astrid Emde}{3004}\workshopspace
+	\newsmalltimeslot{11:00 bis 12:30}
+	\workshop{Das neue GRASS-Plugin in QGIS}{Otto Dassau}{432}\workshopspace
+	\workshop{Einführung in die Geodaten-\newline verarbeitung mit Python}{Christian Strobl}{3004}\workshopspace
+	\newsmalltimeslot{13:30 bis 15:00}
+	\workshop{MapFish Print 3 -- Maps, Templates und Reports}{Tobias Sauerwein}{432}\workshopspace
+	\workshop{Mapbender 3}{Astrid Emde}{3004}\workshopspace
+	\newsmalltimeslot{15:30 bis 17:00}
+	\workshop{Projektionsmanagement in QGIS}{Class Leiner}{432}\workshopspace
+	\workshop{GeoServer advanced}{Daniel Koch}{3004}\workshopspace
+	
+\section*{Workshops am Mittwoch}\label{dienstag-workshops}
+	\newsmalltimeslot{09:00 bis 10:30}
+	\workshop{Grafische Prozessmodellierung in QGIS}{Class Leiner}{432}\workshopspace
+	\workshop{WebGIS-Anwendungen erstellen mit der 3. Generation von GeoExt}{Christian Mayer}{3004}\workshopspace
+	\newsmalltimeslot{10:30 bis 12:00}
+	\workshop{Turf.js – Geoverarbeitung im Browser}{Numa Gremling}{432}\workshopspace
+	\workshop{Karten publizieren mit QGIS Server und QGIS cloud}{Marco Hugentobler, Pirmin Kalberer}{3004}\workshopspace
+
+% 	
+% \input{karte}
+% 
+% \begin{landscape}	
+% \ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}
+% \section*{Vorträge am Mittwoch}\label{mittwoch}
+% \noindent\begin{center}
+% 	\noindent\begin{longtabu}{lZ{4.7cm}Z{4.7cm}}
+% 		& \multicolumn{1}{c}{\cellcolor{hellgruen} S\,1}
+% 		& \multicolumn{1}{c}{\cellcolor{hellorange} Aula} \tabularnewline
+% 		\endhead
+% 		10:30
+% 		\otherevent{Was ist Open Source? Wie funktioniert das?}\coffeespace
+% 		\talk{}{}
+% 		\coffeespace\tabularnewline
+% 		\rowcolor{commongray}
+% 		12:00 & \multicolumn{2}{c}{%
+% 			\parbox[c]{24pt}{%
+% 				\includegraphics[height=10pt]{cafe}%
+% 			}
+% 			Pause} \tabularnewline
+% 		13:00
+% 		\talk{}{} 
+% 		\talk{Eröffnung}{}
+% 		\tabularnewline
+% 		13:30
+% 		\talk{}{}
+% 		\talk{Nicht zuschauen -- mitmachen!}{Frederik Ramm}
+% 		\coffeespace\tabularnewline
+% 		14:00
+% 		\talk{}{}
+% 		\talk{Softwarewartung für Open Source -- ein Widerspruch?}{Till Adams}
+% 		\coffeespace\tabularnewline
+% 		\rowcolor{commongray}
+% 		15:00 & \multicolumn{2}{c}{%
+% 			\parbox[c]{24pt}{%
+% 				\includegraphics[height=10pt]{cafe}%
+% 			}
+% 			Kaffeepause} \tabularnewline
+% 	\end{longtabu}	
+% 
+% 
+% 	\begin{longtabu}{lZ{3cm}Z{3cm}Z{3cm}}
+% 		& \multicolumn{1}{c}{\cellcolor{hellgruen} S\,1}
+% 		& \multicolumn{1}{c}{\cellcolor{hellgelb} S\,2}
+% 		& \multicolumn{1}{c}{\cellcolor{geoblau} S\,10} \tabularnewline
+% 		\endhead
+% 		15:30
+% 		\talk{Welches Münster meinen sie?}{Marc Tobias Metten}
+% 		\talk{Umsetzung der INSPIRE-Richtlinie}{Jürgen Weichand}
+% 		\talk{Neues von QGIS 2.8}{Horst Düster}
+% 		\coffeespace\tabularnewline
+% 		16:00
+% 		\talk{Offene Geodaten -- Lage von Orten im Vergleich}{Thomas Brinkhoff}\coffeespace
+% 		\talk{GeoPortal.rlp}{Armin Retterath}
+% 		\talk{QGIS-Plugins}{Pirmin Kalberer}
+% 		\coffeespace\tabularnewline
+% 		16:30
+% 		\talk{OSM-Tagging in Wikidata}{Tim Alder}
+% 		\talk{Geonetzwerk metropoleRuhr}{David Arndt}
+% 		\talk{QGIS Print Com\-poser und Atlas-Seriendruck}{Andreas Neumann}
+% 		\coffeespace\tabularnewline
+% 		17:00
+% 		\talk{Ein GeoWiki auf OSM-Basis}{Klaus Stein}
+% 		\talk{Spatial Index von Solr}{Tim Balschmiter\vspace{0.5em}}
+% 		\talk{QField for QGIS}{Marco Bernasocchi}
+% 		\coffeespace\coffeespace\tabularnewline
+% 		\rowcolor{commongray}
+% 		17:30 &
+% 		\multicolumn{3}{c}{%
+% 			\textbf{Anwendertreffen/BoFs} (siehe Seite \pageref{bof-mittwoch})}
+% 		\tabularnewline
+% 	\end{longtabu}	
+% 	\ThisCenterWallPaper{1.0}{mittwoch-ungerade-gedreht}
+% 	\enlargethispage{0.5em}
+% \end{center}
+% \end{landscape}
+
+\renewcommand{\arraystretch}{1}
+\justify

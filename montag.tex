@@ -1,0 +1,161 @@
+% 10:30
+\renewcommand{\konferenztag}{\montag}
+\newtimeslot{10:30}
+%
+\abstractGruen{Arnulf Christl}{Was sind "`Open"' Source, Data und Standards -- und wie funktioniert das?}{}{Open Source
+hat viele Facetten -- und es ranken sich inzwischen ebenso viele Mythen darum. Was davon richtig ist und was nicht stellen
+wir in einer kurzen Einführung zusammen. Was sind Open Data und Open Standards, welche Gemeinsamkeiten gibt es und wo
+unterscheiden sie sich. Der Vortrag richtet sich an alle, die mit Open Source, Open Data oder Open Standards bisher
+noch wenig Kontakt hatten und die Grundlagen verstehen möchten.
+
+Open Source ist auf der einen Seite ein Entwicklungsmodell und auf der anderen ein Lizenzmodell.
+Zusammen bilden sie eine Kultur offener Entwicklungsgmemeinschaften, die höchst effektiv arbeiten. Diese Kultur ist
+um ein Vielfaches effektiver, als proprietäre Modelle es je sein können. Ein einfaches Beispiel: Das Betriebssystem
+des Herstellers Apple basiert auf dem Open Source Unix FreeBSD. Es gibt halt einfach nichts besseres, und es selbst
+herzustellen wäre unendlich teuer, das hat sogar der hyper-proprietäre Hersteller Apple eingesehen.
+
+Der Vortrag stellt die Geschichte der Entwicklung von Open Source vor und geht auf wichtige Grundlagen ein.
+%%% Rest weggekürzt, dann ist es solange wie 2015.
+% 
+% Ziel des FOSSGIS e.V. und der OSGeo ist die Förderung und Verbreitung freier Geographischer Informationssysteme (GIS) im
+% Sinne Freier Software und Freier Geodaten. Dazu zählen auch Erstinformation und Klarstellung von typischen Fehlinformationen
+% über Open Source und Freie Software, die sich über die Jahre festgesetzt haben.%
+}
+%
+% 13:00
+\newsmalltimeslot{13:00}%
+\abstractGruen{Marco Lechner}{Eröffnungsveranstaltung der FOSSGIS-Konferenz 2016}{}%
+{Kurze Begrüßung durch den Veranstalter (FOSSGIS e.V.) und Grußworte der gastgebenden Universität durch Herrn Bernhard Zage.}
+%
+% 13:30
+\newsmalltimeslot{13:30}
+\abstractGruen{Christoph Hormann}{Jenseits von Mercator}{}{Karten im OpenStreetMap-Umfeld werden fast immer in
+Mercator-Projektion produziert.  Diese prägt durch ihre Verbreitung nicht nur in OpenStreetMap, sondern auch in
+so gut wie allen anderen globalen Internet-Kartendiensten unser Verständnis von Geographie und Kartographie in einem erheblichen Ausmaß.
+
+Dieser Vortrag erläutert die Vor- und Nachteile dieser Projektion, insbesondere auch den Einfluss, den diese auf die Datenerfassung
+in OpenStreetMap hat. Es werden verschiedene Alternativen mit ihren möglichen Anwendungsfeldern vorgestellt sowie die praktischen
+Schwierigkeiten beim Umgang mit Projektionen und der Umrechnung zwischen verschiedenen Koordinatensystemen erläutert.}
+%
+% 14:00
+\newsmalltimeslot{14:00}
+\abstractGruen{}{Lightning Talks}{}{}{\vspace{-2em}
+	\begin{itemize}
+		\RaggedRight
+		\setlength{\itemsep}{-2pt} % Aufzählungspunktabstand auf 0
+		\item Foo Bar: Sonstwas
+	\end{itemize}
+	\justifying
+	}
+%
+% 15:00
+\newtimeslot{15:00}
+\abstractGruen{Till Adams}{GIS in der Cloud - Schönwetterwolke, Gewitter oder reiner Dunst?}{}{s.o.}
+
+\abstractGiStudio{Michael Maier}{OpenStreetMap und Wikidata}{}{Was Tim-Berners Lee mit dem www begonnen hat (Texte zu verlinken),
+wird nun mit dem Öl des 21. Jahrhunderts, den Daten weitergeführt.
+Lasst OpenStreetMap ein Teil der Linked Open Data Cloud werden!
+%
+Zwischen OpenStreetMap und Wikipedia wird bereits rege verlinkt - Nehmen wir die nächste Stufe in Richtung 
+Maschinenlesbarkeit und verlinken auch nach Wikidata - und zurück!}
+%
+% 15:30
+%TODO kürzen
+\newtimeslot{15:30}
+\abstractGruen{Markus Neteler}{Freie (Geo-)Daten mit Freier (Geo-)Software - oder: wie kommen Geodaten zum Nutzer?}{}%
+{%
+% Auch wenn
+% sich der Titel des Talks wie ein vereinfachter Werbeslogan anhört, entpuppt sich der dahinter steh\-ende Inhalt bei näherer Betrachtung als
+% tatsächlich spannende Fragestellung. Im Jahr 2014 wurde der erste Erd\-beobachtungs-Satellit ""Sentinel-1A"" des
+% EU"=Erd\-beo\-bach\-tungs\-programms ""Copernicus"" gestartet und sendet seit einiger Zeit kontinuierlich Fernerkungungsdaten zur Erde,
+% gefolgt von ""Sentinel-2A"" in 2015. Dass über das Copernicus Programm mehr und mehr Daten verschiedenster Spektralbereiche zur
+% Verfügung stehen, wird in der Fernerkundungs-Community natürlich wahrgenommen, verschiedenste Fachbereiche arbeiten bereits an
+% der Nutzung der Daten. An potentiellen Nutzern und Anbietern der Geoinformations-Community fährt dieser Zug allerdings nahezu
+% unbeachtet vorbei. Dabei sind sämtliche durch Copernicus bereit gestellte Daten Freie (Geo-)Daten und dürfen daher auch
+% kommerziell aufbereitet angeboten und verarbeitet werden.
+% % 
+% Dass man mit Hilfe von Prozessierung aus Fernerkundungsdaten neue räumliche Erkenntnisse mit Nutzen für verschiedenste Bereiche
+% der Geo-Information, sei es Landnutzung, Qualitätssicherung von Geodaten, Bodenfeuchte oder der Oberflächenstruktur des Landes,
+% um nur einige Beispiele zu nennen, gewinnen kann, ist auch allgemein in der GIS-Welt bekannt. Was derzeit fehlt, oft auch
+% inzwischen aufgrund der schieren Datenmenge, ist ein einfacher Zugang zu diesen Daten und vor allem zu den daraus gewonnenen Informationen.
+% 
+% Der Vortrag stellt einen Ansatz vor, wie man diese neuen Freien Geodaten zeitnah mit der Freien Software GRASS GIS prozessieren
+% und automatisiert als einen standardisierten OGC-Web-Service mittels GeoServer und MapProxy bereit stellen kann. Erweitert
+% man die Architektur um Komponenten, die es dem Nutzer erlauben, auf Basis von bestimmten Algorithmen automatisiert und
+% ohne technische Kenntnis der Software selber aktuelle Informationen zu generieren, so erweitert man den Nutzerkreis des
+% Copernicus-Programms und verbindet gleichzeitig zwei Welten, die sich bisher in vielen Bereichen in friedlicher
+% Ko-Existenz nebeneinander entwickelt haben: Die GIS- und die Fernerkundungs-Community. Auch die hierfür
+% erforderlichen Schnittstellen existieren seit Manifestierung der WPS-Spezifikation des OGC längst.
+% 
+% Damit entfällt die Hürde des mühseligen Datensammelns, langer Download-Zeiten, die Notwendigkeit des Vorhaltens von
+% Rechen- und Speicherkapazitäten sowie der erforderlichen Kenntnis und Verfügbarkeit von Expertenwerkzeugen, denn das
+% Laden eines standardkonformen WMS in eigene Werkzeuge ist für viele GIS-Nutzer seit Jahren gelebte Realität.
+% Der Vortrag rundet sich durch konkrete Nutzungsbeispiele sowie einem praktischen Beispiel, die Vorstellung des
+% Workflows und der Architektur ab.
+}
+
+\abstractGiStudio{Michael Glanznig}%
+{Die Karte verändert sich - der Standardstil openstreetmap-carto}%
+{}%
+{Alle paar Wochen ist es wieder soweit: Mapnik (osm-carto)-Update, die Karte verändert sich.
+Nicht immer sind so große Änderungen wie die Darstellung der Straßen dabei und nicht immer sind
+alle von den Änderungen begeistert. Dieser Vortrag versucht ein wenig hinter die Kulissen
+der osm-carto Entwicklung zu blicken und darzustellen in welchem Spannungsfeld sich der Standardstil bewegt.
+
+Welche Ziele hat osm-carto eigentlich? Wie finden Änderungen den Weg in den Kartenstil?
+Wer entscheidet das und wie? Kann ich dazu beitragen? Wie kann ich meinen eigenen Kartenstil erstellen?}
+
+\newtimeslot{16:00}
+\abstractGruen{Gerhard Genuit}%
+{Schadstoffeinleitungen in Kanäle und Gewässer verfolgen}%
+{}%
+{}
+
+\abstractGiStudio{Wided Medjroubi}%
+{SciGRID: ein offenes Referenzmodell europäischer Übertragungsnetze für wissenschaftliche Untersuchungen.}%
+{}%
+{}
+
+\newtimeslot{17:00}
+\abstractGruen{Axel Schaefer}%
+{Neues in Metador 2.1}%
+{}%
+{Metador2 ist eine OpenSource Lösung zum einfachen Erstellen und Bearbeiten von Metadaten. Metador 2.1 enthält ein neues Plugin-System, mit dem beispielsweise unterschiedliche Metadatenprofile einfacher und übersichtlicher erstellt und mit Import- und Exportfunktionen unterstützt werden können. Der Vortrag stellt die Neuerungen in der kommenden Version 2.1 vor, mit Live-Beispielen. Metador ist verfügbar unter: https://github.com/WhereGroup/metador2/}
+
+\abstractGiStudio{Frederik Ramm}%
+{Automatische Edits und Importe in OpenStreetMap}%
+{}%
+{Dieser Vortrag zeigt die Probleme auf, die mit großflächigen automatischen und halb-automatischen Edits in OpenStreetMap einhergehen, und diskutiert Alternativen hierzu. }
+
+\newtimeslot{17:30}
+\abstractGruen{Marco Hugentobler}%
+{Neue Funktionen in QGIS 2.10 - 2.16}%
+{}%
+{Seit der FOSSGIS 2015 in Münster sind vier neue QGIS Versionen herausgekommen, jede mit zahlreichen Neuerungen. Der Vortrag stellt ausgewählte neue Features, vor allem aus den Bereichen Geometrie und Symbolisierung, vor.}
+
+\abstractGiStudio{Roland Olbricht}%
+{Braucht OpenStreetMap Flächen und Kanten?}%
+{}%
+{Modellbildung findet bei OpenStreetMap nicht nur durch die Wahl der Tags statt.
+Werden Elemente als Linie oder Fläche erfasst?
+Offensichtliche Zweifelsfälle sind Fußgängerzonen in Breiten zwischen Straße und Platz.
+Aber auch generell nehmen die meisten Objekte im realen Raum Fläche ein.
+Gleichzeitig haben dennoch einige Objekte entweder sehr strikten Liniencharakter wie z.B. Gleise.
+
+In diesem Vortrag werden Werkzeuge vorgestellt,
+um ein Kantenmodell zu berechnen, ein Flächenmodell zu berechnen
+und um die dabei zutage tretrenden Umstimmigkeiten zu finden.
+}
+
+
+\newtimeslot{18:00}
+\abstractGruen{Oliver Tonnhofer}%
+{Neues von MapProxy}%
+{}%
+{Der Vortrag befasst sich mit unbekannten Funktionen, der große Bandbreite an Einsatzmöglichkeiten und der wachsenden Community von MapProxy.}
+
+
+\abstractGiStudio{Moderation TBA}%
+{OSM Lightning Talks}%
+{}%
+{}
