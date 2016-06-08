@@ -22,7 +22,11 @@ Derzeit befindet sich eine Webanwendung zur Auswertung in Entwicklung.}
 \abstractGruen{Michael Paulmann}%
 {Umstellung von Übungen auf QGIS}%
 {}%
-{Umstellung des Hochschulmoduls Geographische Informationssysteme von proprietärer Software auf die Open Source Software QGIS. Es gibt einen Einblick in die Probleme die bisher auftraten und den bisherigen Fortschritt. }
+{An der Hochschule für Technik in Stuttgart im Modul Grundlagen Geographischer Informationssysteme
+sollen die Übungen und die Vorlesung nicht mehr in einem proprietären Geoinformationssystem
+stattfinden sondern in die Open-Source Software QGIS. Es gibt einen Einblick in die Probleme
+die bisher auftraten und den bisherigen Fortschritt, der Prozess ist noch nicht abgeschlossen.
+Bis Oktober 2016 soll alles auf QGIS geändert worden sein.}
 
 \abstractGiStudio{Manuel Roth}%
 {Vector Tiles from OpenStreetMap}%
@@ -35,12 +39,12 @@ Die Zuhörer wissen nach unserer Präsentation wie sie eine selbst gestaltete Ka
 \abstractGruen{Manfred Egger}%
 {Automatische Erkennung der Projektion von Geodaten}%
 {}%
-{Das GIS-Programm SHAPEFILE PROJECTIONFINDER wird als  Lösungsvorschlag in Zusammenhang mit Geodaten und
-unbekannter Projektion präsentiert. Zielgruppe dieses Programms sind vor allem Anwender, die mit geringen
-Fachkenntnissen zu Koordinatensystemen ohne Aufwand gelieferte Daten in GIS-Projekte lagerichtig integrieren möchten.
-Das Programm wertet ein beliebiges Shapefile mit unbekannter Projektion aus und schlägt auf Basis vorhandener offener
-Onlinedienste mögliche zutreffende Projektionen vor, die der Anwender automatisch zuweisen kann. Der Aufwand bei unklarer
-Projektion wird so reduziert.}
+{Das GIS-Tool SHAPEFILE PROJECTIONFINDER wird als Lösungsvorschlag
+in Zusammenhang mit Geodaten und
+unbekannter Projektion präsentiert. Zielgruppe dieses Programms sind vor
+allem Anwender, die mit geringen
+Fachkenntnissen zu Koordinatensystemen ohne Aufwand gelieferte Daten in
+GIS-Projekte lagerichtig integrieren möchten.}
 
 \abstractGiStudio{Dietmar Seifert}%
 {Stand der Hausnummern in OSM und Hausnummerauswertung auf regio-osm.de}%
@@ -65,7 +69,11 @@ Der Vortrag präsentiert diese Lösung im Detail und geht auf deren Vor- und Nac
 \abstractGruen{Sara Biesel}%
 {QGIS meets MapProxy}%
 {}%
-{}
+{Das BKG entwickelt ein System, um Kartenausschnitte zu speichern und
+die Karten Offline im Geoinformatiomssystem QGIS zu laden. Dabei wird ein
+Proxyserver "`MapProxy"' verwendet, der bei bestehender Internetverbindung
+die Karten als Kacheln lokal ablegt. Das ganze System liegt auf einer
+portablen, externen Festplatte.}
 
 \abstractGiStudio{Serhan Şen}%
 {Leitstellensimulator goes OpenStreetMap}%
@@ -80,7 +88,25 @@ Herausforderungen – und Chancen – seit Beginn der Umstellungen Ende 2015 zus
 \abstractGruen{Jörg Habenicht}%
 {Die Zugriffszeit auf den QGis-Mapserver um Faktor 100 beschleunigen.}%
 {}%
-{}
+{In unserem Setup wird der QGis-Mapserver verwendet, um die Sessions von QGis
+über ein Webinterface anzuzeigen. Die QGis Konfigurationsdateien haben eine
+Speichergröße von bis zu 19MB, was in der QGis-Version 2.10 den Zugriff
+auf das Webinterface auf ca.
+30 Sekunden verlängert. 30 Sekunden ist auch der Timeout des Webbrowsers,
+so dass es in unregelmäßigen Abständen Sessionabbrüche gibt.
+
+
+Wir haben ein Tool programmiert, mit dem die Sessionabbrüche verhindert und
+die Zugriffszeiten des qgis-servers Version 2.10 um den Faktor 100
+beschleunigt werden. Das Programm nutzt intensiv die Caches des
+Qgis-Servers aus, indem die Zugriffe für eine Karte nur einem bestimmten
+Prozess zur Bearbeitung zugeteilt werden.
+Das Programm wird mit dem Vortrag vorgestellt, zusammen mit Erklärungen
+für den Aufbau des Programms, der Funktionsweise, der Setupkonfiguration
+für einen Server und ein paar Messdaten.
+
+Der Quellcode des Tools steht auf GitHub unter
+https://github.com/geocalc/qgis-scheduler zur Verfügung.}
 
 \abstractGiStudio{Numa Gremling}%
 {Turf.js – Geoverarbeitung im Browser}%
@@ -123,19 +149,21 @@ die potentielle Nutzer abseits von der Kartenerstellung an OpenStreetMap stellen
 \abstractGruen{Florian Ledermann}%
 {mapmap.js - Ein kartographisches API für interaktive thematische Karten}%
 {}%
-{Das an der TU Wien entwickelte API mapmap.js versucht den kartographischen Visualisierungsprozess in seiner Gesamtheit in einem high-level JavaScript API abzubilden, wobei jeder Teilaspekt zunächst „einfach funktioniert“, aber bei Bedarf im Detail angepasst werden kann. Die kartographische Visualisierungspipeline – vom Laden der Daten, über das Zuweisen graphischer Repräsentationen bis zur User-Interaktion – erlaubt die Erstellung von einfachen interaktiven Karten in wenigen Zeilen, aber auch die Anpassung im Detail und somit die Entwicklung völlig neuer Visualisierungstechniken.}
+{Das an der TU Wien entwickelte API mapmap.js versucht den kartographischen
+Visualisierungsprozess in seiner Gesamtheit in einem high-level JavaScript API
+abzubilden, wobei jeder Teilaspekt zunächst „einfach funktioniert“, aber bei
+Bedarf im Detail an die Notwendigkeiten der jeweiligen Anwendung angepasst werden
+kann und somit auch die Entwicklung neuer Visualisierungstechniken erlaubt.}
 
 \abstractGiStudio{Sven Geggus}%
 {Ansätze zur Lokalisierung einer Openstreetmap basierten Weltkarte}%
 {}%
-{Der Vortrag stellt die Implementierung von Lokalisierungsfunktionen als sogenannte "`stored procedures"' in PostrgreSQL vor,
-die zur Latinisierung des deutschen Kartenstils eingesetzt wird.
-
-Als Datenquelle dient die OSM-Datenbank selbst, die bereits viele lokalisierte Namen enthält. Fehlen diese erfolgt alternativ
-die automatisierte Umschrift (Transliteration).
-
-Die Transliteration birgt jedoch eine Vielzahl von Problemen, die schrift- oder sprachabhängige Lösungen benötigen. Der Vortrag
-stellt sowohl die Implementierung solcher Lösungen als auch Probleme, die nur schwer lösbar erscheinen, vor.}
+{Der Vortrag stellt eine vom Renderer unabhängige Methode zur Latinisierung
+von OSM-basierten Karten vor. Als Datenquelle dient, wenn möglich, OSM
+selbst. Alternativ wird Transkription verwendet, die jedoch viele
+Schriftsystem-abhängige Probleme birgt, für die teilweise Lösungen
+aufgezeigt werden. Ferner wird auf politische Probleme bei der Lokalisierung
+von Karten eingegangen.}
 
 \newtimeslot{15:30}
 \abstractGruen{Marc Jansen}%
