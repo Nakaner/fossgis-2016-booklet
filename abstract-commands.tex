@@ -52,10 +52,6 @@
 	}}
 	%
 	\isabstractempty{#4}%
-	\ifthenelse{\equal{#6}{\gruenerhs}}%
-		{}% bei Grüner HS keinen Seitenhintergrund setzen
-		{\setpagebackground%
-	}
 	\vspace{0.5em}% Abstand zum nächsten Talk, auch wenn es keinen Abstract gibt
 	\setlength\tabcolsep{6pt} % Spaltenpadding wieder auf Default setzen
 }
@@ -100,6 +96,7 @@
 % muss ausgelagert und durch \makeatletter umgeben sein
 \makeatletter
 \newcommand{\isabstractempty}[1]{%
+		\setpagebackground
 		\vspace{0.5em}\newline%
 		#1 \par% % Abstract
 		\vspace{1.5em}% Abstand zum nächsten Talk, auch wenn es einen Abstract gibt
