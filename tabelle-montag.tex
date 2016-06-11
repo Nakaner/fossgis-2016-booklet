@@ -39,7 +39,7 @@
 \section*{Workshops am Montag}\label{montag-workshops}%a
 	\newsmalltimeslot{15:00 bis 16:30}%
 	% Hack, um Einrücken des ersten Workshops wieder rückgängig zu machen
-	\raggedright
+	\RaggedRight
 	\noindent\workshop{GraphHopper-Workshop}{Peter Karich}{432}\workshopspace
 	\noindent\workshop{QGIS-Grundlagen}{Otto Dassau}{3004}\workshopspace
 	\newsmalltimeslot{17:00 bis 18:30}
@@ -69,83 +69,89 @@
 	\workshop{Turf.js – Geoverarbeitung im Browser}{Numa Gremling}{432}\workshopspace
 	\workshop{Karten publizieren mit QGIS Server und QGIS cloud}{Marco Hugentobler, Pirmin Kalberer}{3004}\workshopspace
 
-% 	
-% \input{karte}
-% 
-% \begin{landscape}	
-% \ifthispageodd{\ThisCenterWallPaper{1.0}{mittwoch-ungerade}}{\ThisCenterWallPaper{1.0}{mittwoch-gerade}}
-% \section*{Vorträge am Mittwoch}\label{mittwoch}
-% \noindent\begin{center}
-% 	\noindent\begin{longtabu}{lZ{4.7cm}Z{4.7cm}}
-% 		& \multicolumn{1}{c}{\cellcolor{hellgruen} S\,1}
-% 		& \multicolumn{1}{c}{\cellcolor{hellorange} Aula} \tabularnewline
-% 		\endhead
-% 		10:30
-% 		\otherevent{Was ist Open Source? Wie funktioniert das?}\coffeespace
-% 		\talk{}{}
-% 		\coffeespace\tabularnewline
-% 		\rowcolor{commongray}
-% 		12:00 & \multicolumn{2}{c}{%
-% 			\parbox[c]{24pt}{%
-% 				\includegraphics[height=10pt]{cafe}%
-% 			}
-% 			Pause} \tabularnewline
-% 		13:00
-% 		\talk{}{} 
-% 		\talk{Eröffnung}{}
-% 		\tabularnewline
-% 		13:30
-% 		\talk{}{}
-% 		\talk{Nicht zuschauen -- mitmachen!}{Frederik Ramm}
-% 		\coffeespace\tabularnewline
-% 		14:00
-% 		\talk{}{}
-% 		\talk{Softwarewartung für Open Source -- ein Widerspruch?}{Till Adams}
-% 		\coffeespace\tabularnewline
-% 		\rowcolor{commongray}
-% 		15:00 & \multicolumn{2}{c}{%
-% 			\parbox[c]{24pt}{%
-% 				\includegraphics[height=10pt]{cafe}%
-% 			}
-% 			Kaffeepause} \tabularnewline
-% 	\end{longtabu}	
-% 
-% 
-% 	\begin{longtabu}{lZ{3cm}Z{3cm}Z{3cm}}
-% 		& \multicolumn{1}{c}{\cellcolor{hellgruen} S\,1}
-% 		& \multicolumn{1}{c}{\cellcolor{hellgelb} S\,2}
-% 		& \multicolumn{1}{c}{\cellcolor{geoblau} S\,10} \tabularnewline
-% 		\endhead
-% 		15:30
-% 		\talk{Welches Münster meinen sie?}{Marc Tobias Metten}
-% 		\talk{Umsetzung der INSPIRE-Richtlinie}{Jürgen Weichand}
-% 		\talk{Neues von QGIS 2.8}{Horst Düster}
-% 		\coffeespace\tabularnewline
-% 		16:00
-% 		\talk{Offene Geodaten -- Lage von Orten im Vergleich}{Thomas Brinkhoff}\coffeespace
-% 		\talk{GeoPortal.rlp}{Armin Retterath}
-% 		\talk{QGIS-Plugins}{Pirmin Kalberer}
-% 		\coffeespace\tabularnewline
-% 		16:30
-% 		\talk{OSM-Tagging in Wikidata}{Tim Alder}
-% 		\talk{Geonetzwerk metropoleRuhr}{David Arndt}
-% 		\talk{QGIS Print Com\-poser und Atlas-Seriendruck}{Andreas Neumann}
-% 		\coffeespace\tabularnewline
-% 		17:00
-% 		\talk{Ein GeoWiki auf OSM-Basis}{Klaus Stein}
-% 		\talk{Spatial Index von Solr}{Tim Balschmiter\vspace{0.5em}}
-% 		\talk{QField for QGIS}{Marco Bernasocchi}
-% 		\coffeespace\coffeespace\tabularnewline
-% 		\rowcolor{commongray}
-% 		17:30 &
-% 		\multicolumn{3}{c}{%
-% 			\textbf{Anwendertreffen/BoFs} (siehe Seite \pageref{bof-mittwoch})}
-% 		\tabularnewline
-% 	\end{longtabu}	
-% 	\ThisCenterWallPaper{1.0}{mittwoch-ungerade-gedreht}
-% 	\enlargethispage{0.5em}
-% \end{center}
-% \end{landscape}
+\newpage
+\ifthispageodd{\ThisCenterWallPaper{1.0}{montag-ungerade}}{\ThisCenterWallPaper{1.0}{montag-gerade}}
+\section*{Vorträge am Montag}\label{mittwoch}
+\noindent\begin{center}
+	\noindent\begin{longtabu}{lZ{2.93cm}Z{2.93cm}}
+		& \multicolumn{1}{c}{\cellcolor{geoblau} Audimax}
+		& \multicolumn{1}{c}{\cellcolor{hellgruen} Grüner HS} \tabularnewline
+		\endhead
+		10:30
+		\talk{}{}
+		\talk{Was sind "`Open"' Source, Data und Standards -- und wie funktioniert das?}%
+		  {Arnulf Christl, Frederik Ramm, Dominik Helle}\coffeespace
+		\coffeespace\tabularnewline
+		\rowcolor{commongray}
+		12:00 & \multicolumn{2}{c}{%
+			\parbox[c]{24pt}{%
+				\includegraphics[height=10pt]{cafe}%
+			}
+			Pause} \tabularnewline
+		13:00
+		\talk{Eröffnungs\-veranstaltung}{Marco Lechner}
+		\talk{}{}
+		\tabularnewline
+		13:30
+		\talk{Jenseits von Mercator}{Christoph Hormann}
+		\talk{}{}
+		\coffeespace\tabularnewline
+		14:00
+		\talk{GIS Lightning Talks 1}{}
+		\talk{}{}
+		\coffeespace\tabularnewline
+		\rowcolor{commongray}
+		14:30 & \multicolumn{2}{c}{%
+			\parbox[c]{24pt}{%
+				\includegraphics[height=10pt]{cafe}%
+			}
+			Kaffeepause} \tabularnewline
+	\end{longtabu}
+
+\newpage
+\ifthispageodd{\ThisCenterWallPaper{1.0}{montag-ungerade}}{\ThisCenterWallPaper{1.0}{montag-gerade}}
+	\begin{longtabu}{lZ{2.93cm}Z{2.93cm}}
+		& \multicolumn{1}{c}{\cellcolor{hellgruen} Grüner HS}
+		& \multicolumn{1}{c}{\cellcolor{hellgelb} GI-Studio} \tabularnewline
+		\endhead
+		15:00
+		\talk{GIS in der Cloud - Schönwetterwolke, Gewitter oder reiner Dunst?}{Till Adams}
+		\talk{OpenStreetMap und Wikidata}{Michael Maier}
+		\coffeespace\tabularnewline
+		15:30
+		\talk{Freie (Geo-)Daten mit Freier (Geo-)Software - oder: wie kommen Geodaten zum Nutzer?}{Markus Neteler}
+		\talk{Die Karte verändert sich - der Standardstil openstreetmap-carto}{Michael Glanznig}
+		\coffeespace\tabularnewline
+		16:00
+		\talk{Schadstoffeinleitungen in Kanäle und Gewässer verfolgen}{Gerhard Genuit}
+		\talk{SciGRID: ein offenes Referenzmodell europäischer Übertragungsnetze für wissenschaftliche Untersuchungen}{Wided Medjroubi}
+		\coffeespace\tabularnewline
+		\rowcolor{commongray}
+		16:30 & \multicolumn{2}{c}{%
+			\parbox[c]{24pt}{%
+				\includegraphics[height=10pt]{cafe}%
+			}
+			Kaffeepause} \tabularnewline
+		17:00
+		\talk{Neues in Metador 2.1}{Axel Schaefer}
+		\talk{Automatische Edits und Importe in OpenStreetMap}{Frederik Ramm}
+		\coffeespace\tabularnewline
+		17:30
+		\talk{Neue Funktionen in QGIS 2.10 - 2.16}{Marco Hugentobler}
+		\talk{Braucht OpenStreetMap Flächen und Kanten?}{Roland Olbricht}
+		\coffeespace\tabularnewline
+		18:00
+		\talk{Neues von MapProxy}{Oliver Tonnhofer}
+		\talk{OSM Lightning Talks}{}
+		\coffeespace\tabularnewline
+		18:30 &
+		\multicolumn{2}{c}{%
+			\textbf{Anwendertreffen/BoFs} (siehe Seite \pageref{bof-montag})}
+		\tabularnewline
+	\end{longtabu}
+	\ThisCenterWallPaper{1.0}{mittwoch-ungerade-gedreht}
+	\enlargethispage{0.5em}
+\end{center}
 
 \renewcommand{\arraystretch}{1}
 \justify
