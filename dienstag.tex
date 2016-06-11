@@ -107,25 +107,11 @@ Herausforderungen -- und Chancen -- seit Beginn der Umstellungen Ende 2015 zusam
 \abstractGruen{Jörg Habenicht}%
 {Die Zugriffszeit auf den QGis-Mapserver um Faktor 100 beschleunigen.}%
 {}%
-{In unserem Setup wird der QGis-Mapserver verwendet, um die Sessions von QGis
-über ein Webinterface anzuzeigen. Die QGis Konfigurationsdateien haben eine
-Speichergröße von bis zu 19MB, was in der QGis-Version 2.10 den Zugriff
-auf das Webinterface auf ca.
-30 Sekunden verlängert. 30 Sekunden ist auch der Timeout des Webbrowsers,
-so dass es in unregelmäßigen Abständen Sessionabbrüche gibt.
-
-
-Wir haben ein Tool programmiert, mit dem die Sessionabbrüche verhindert und
-die Zugriffszeiten des qgis-servers Version 2.10 um den Faktor 100
-beschleunigt werden. Das Programm nutzt intensiv die Caches des
-Qgis-Servers aus, indem die Zugriffe für eine Karte nur einem bestimmten
-Prozess zur Bearbeitung zugeteilt werden.
-Das Programm wird mit dem Vortrag vorgestellt, zusammen mit Erklärungen
-für den Aufbau des Programms, der Funktionsweise, der Setupkonfiguration
-für einen Server und ein paar Messdaten.
-
-Der Quellcode des Tools steht auf GitHub unter
-https://github.com/geocalc/qgis-scheduler zur Verfügung.}
+{Wir benutzen den QGIS-Mapserver, um den Kunden verschiedene Karten im
+Webbrowser anzuzeigen. Mit unseren großen Konfigurationsdateien von bis
+zu 19MB benötigt der Server beim Erstzugriff zur Berechnung länger als
+der Browsertimeout. Mit unserem Tool wird der Timeout verhindert und die
+Zugriffszeit 100fach beschleunigt.}
 
 \abstractGiStudio{Numa Gremling}%
 {Turf.js – Geoverarbeitung im Browser}%
