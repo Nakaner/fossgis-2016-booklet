@@ -173,18 +173,16 @@
 %% Sponsorenbox
 %% 1. Logo
 %% 2. Logobreite
-%% 3. negativer vspace nach Logo
-%% 4. Text
+%% 3. Text
 \newcommand{\sponsorenbox}[4]{%
 	\setlength{\fboxsep}{4.5pt}
 	\noindent\fcolorbox{gray}{white}{\parbox{\fboxwidth}{
-			\begin{floatingfigure}[r]{#2}
+			\begin{wrapfigure}{r}{#2}
 				\centering
 				\includegraphics[width=#2]{#1}
-				\vspace{#3}
-			\end{floatingfigure}		
-			
-			\noindent #4
+			\end{wrapfigure}
+
+			\noindent #3
 		}}
 		\setlength{\fboxsep}{3pt}
 	}
