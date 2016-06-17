@@ -74,13 +74,14 @@
 	\noindent\workshop{Karten publizieren mit QGIS Server und QGIS cloud}{Marco Hugentobler, Pirmin Kalberer}{3004}\workshopspace
 
 \newpage
-\ifthispageodd{\ThisCenterWallPaper{1.0}{montag-ungerade}}{\ThisCenterWallPaper{1.0}{montag-gerade}}
+\renewcommand{\arraystretch}{1.4}
 \section*{Vorträge am Montag}\label{montag}
+\ThisCenterWallPaper{1.0}{montag-gerade}
 \noindent\begin{center}
-	\noindent\begin{longtabu}{lZ{2.93cm}Z{2.93cm}}
+% \enlargethispage{15\baselineskip}
+	\noindent\begin{tabular}{lZ{2.93cm}Z{2.93cm}}
 		& \multicolumn{1}{c}{\cellcolor{geoblau} Audimax}
 		& \multicolumn{1}{c}{\cellcolor{hellgruen} Grüner HS} \tabularnewline
-		\endhead
 		10:30
 		\talk{}{}
 		\talk{Was sind "`Open"' Source, Data und Standards -- und wie funktioniert das?}%
@@ -110,14 +111,15 @@
 				\includegraphics[height=10pt]{cafe}%
 			}
 			Kaffeepause} \tabularnewline
-	\end{longtabu}
+	\end{tabular}
 
 \newpage
-\ifthispageodd{\ThisCenterWallPaper{1.0}{montag-ungerade}}{\ThisCenterWallPaper{1.0}{montag-gerade}}
-	\noindent\begin{longtabu}{lZ{2.93cm}Z{2.93cm}}
+\ClearWallPaper
+\ThisCenterWallPaper{1.0}{montag-ungerade}
+	\noindent\begin{tabular}{lZ{2.93cm}Z{2.93cm}}
+	\enlargethispage{5\baselineskip}
 		& \multicolumn{1}{c}{\cellcolor{hellgruen} Grüner HS}
 		& \multicolumn{1}{c}{\cellcolor{hellgelb} GI-Studio} \tabularnewline
-		\endhead
 		15:00
 		\talk{GIS in der Cloud}{Till Adams}
 		\talk{OpenStreetMap und Wikidata}{Michael Maier}
@@ -125,7 +127,7 @@
 		15:30
 		\talk{Freie \mbox{(Geo-)}\newline Daten mit freier (Geo-)Software}{Till Adams}
 		\talk{Die Karte verändert sich -- OSM Carto}{Michael Glanznig}
-		\coffeespace\tabularnewline
+		\tabularnewline
 		16:00
 		\talk{Schadstoffeinlei\-tungen verfolgen}{Gerhard Genuit\coffeespace}
 		\talk{SciGRID}{Wided Medjroubi}
@@ -139,7 +141,7 @@
 		17:00
 		\talk{Neues in \mbox{Metador 2.1}}{Axel Schaefer}
 		\talk{Automatische Edits und Importe in OSM}{Frederik Ramm}
-		\coffeespace\tabularnewline
+		\tabularnewline
 		17:30
 		\talk{Neue Funktionen in QGIS 2.10--2.16}{Marco Hugentobler}
 		\talk{Braucht OSM Flächen und Kanten?}{Roland Olbricht}
@@ -153,7 +155,7 @@
 		\multicolumn{2}{c}{%
 			\textbf{Anwendertreffen/BoFs} (siehe Seite \pageref{bof-montag})}
 		\tabularnewline
-	\end{longtabu}
+	\end{tabular}
 	\enlargethispage{0.5em}
 \end{center}
 
