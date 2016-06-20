@@ -11,8 +11,8 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="442.91336"
-   height="597.04724"
+   width="125mm"
+   height="168mm"
    id="svg2"
    inkscape:version="0.91 r13725"
    sodipodi:docname="salzburg-uebersicht-karte.svg">
@@ -25,17 +25,18 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1031"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
      id="namedview13"
      showgrid="false"
-     inkscape:zoom="0.79055721"
-     inkscape:cx="166.54084"
-     inkscape:cy="272.04795"
+     inkscape:zoom="0.55900836"
+     inkscape:cx="101.79751"
+     inkscape:cy="344.47954"
      inkscape:window-x="0"
      inkscape:window-y="25"
      inkscape:window-maximized="1"
-     inkscape:current-layer="svg2" />
+     inkscape:current-layer="svg2"
+     units="mm" />
   <metadata
      id="metadata8">
     <rdf:RDF>
@@ -53,47 +54,15 @@
   <image
      sodipodi:absref="/home/michael/Dokumente/OSM/FOSSGIS/fossgis2016/programmheft/wallpaper/salzburg-uebersicht.png"
      xlink:href="salzburg-uebersicht.png"
-     width="407.48032"
-     height="563.3858"
-     preserveAspectRatio="none"
-     id="image4951"
+     y="16.332226"
      x="17.382122"
-     y="18.103884" />
-  <path
-     d="m 35.433071,1.2109375e-6 0,17.7165297890625"
-     id="path4591"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 0,35.433071 17.716535,0"
-     id="path4593"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 407.48031,1.2109375e-6 0,17.7165297890625"
-     id="path4595"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 442.91339,35.433071 -17.71654,0"
-     id="path4597"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 407.48031,597.04724 0,-17.71653"
-     id="path4601"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 425.19685,561.61415 17.71654,2e-5"
-     id="path4603"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="m 35.433071,579.33069 0,17.71655"
-     id="path4605"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
-  <path
-     d="M 17.716535,561.61415 0,561.61417"
-     id="path4607"
-     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+     id="image4951"
+     preserveAspectRatio="none"
+     height="563.3858"
+     width="407.48032" />
   <g
      id="g4954"
-     transform="matrix(0,1,-1,0,573.6908,157.91241)">
+     transform="matrix(0,1,-1,0,573.6908,156.14075)">
     <rect
        transform="matrix(0,-1,1,0,0,0)"
        y="385.17853"
@@ -116,4 +85,48 @@
          id="tspan4149"
          sodipodi:role="line">Daten © OpenStreetMap-Mitwirkende, ODbL 1.0</tspan></text>
   </g>
+  <path
+     d="m 35.433071,-1.9448819e-5 0,17.716536448819"
+     id="path4591"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 0,35.433052 17.716535,0"
+     id="path4593"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 407.48031,-1.9448819e-5 0,17.716536448819"
+     id="path4595"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 442.91339,35.433052 -17.71654,0"
+     id="path4597"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="cc" />
+  <path
+     d="m 407.48031,595.27559 0,-17.71653"
+     id="path4601"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 425.19685,559.8425 17.71654,2e-5"
+     id="path4603"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     d="m 35.433071,577.55904 0,17.71655"
+     id="path4605"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
+  <path
+     d="M 17.716535,559.8425 0,559.84252"
+     id="path4607"
+     style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     inkscape:connector-curvature="0" />
 </svg>
